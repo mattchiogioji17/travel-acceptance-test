@@ -1,0 +1,9 @@
+!3 Chio Home
+
+!define TEST_SYSTEM {slim}
+!path ./lib/*.jar
+!path ./build/classes/main
+
+.ChioHome.QueryFlightApi
+
+!contents -R2 -g -p -f -h

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ChioHome.QueryFlightApi</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2017-04-18T20:46:32-04:00</date>
+    <runTimeInMillis>394</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h3&gt;Query Flight API&lt;/h3&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="7"&gt;&lt;span class="pass"&gt;com.chio.fixtures.QueryFlightApi&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Test Description&lt;/td&gt;
+		&lt;td&gt;origin&lt;/td&gt;
+		&lt;td&gt;destination&lt;/td&gt;
+		&lt;td&gt;date&lt;/td&gt;
+		&lt;td&gt;returnCode?&lt;/td&gt;
+		&lt;td&gt;resultSize?&lt;/td&gt;
+		&lt;td&gt;resultDestination?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;Success &lt;span class="error"&gt;Method setTestDescription[1] not found in com.chio.fixtures.QueryFlightApi.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;TPA&lt;/td&gt;
+		&lt;td&gt;NYC&lt;/td&gt;
+		&lt;td&gt;2017-06-01&lt;/td&gt;
+		&lt;td&gt;[0] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;2&lt;/span&gt;&lt;span class="fail"&gt;0&lt;/span&gt;&lt;span class="diff"&gt;0&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;0&amp;gt;0&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;null&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;NYC&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;</content>
+    <relativePageName>QueryFlightApi</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='com.chio.fixtures.QueryFlightApi', args=[]}</instruction>
+        <slimResult>pass(com.chio.fixtures.QueryFlightApi)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>com.chio.fixtures.QueryFlightApi</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setTestDescription', args=[Success]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setTestDescription[1] not found in com.chio.fixtures.QueryFlightApi.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setOrigin', args=[TPA]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setDestination', args=[NYC]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='setDate', args=[2017-06-01]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_9', instruction='call', instanceName='decisionTable_0', methodName='returnCode', args=[]}</instruction>
+        <slimResult>fail(a=0;e=200)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_9</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>0</actual>
+                              <expected>200</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='resultSize', args=[]}</instruction>
+        <slimResult>fail(0&gt;0)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_10</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>0&gt;0</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='resultDestination', args=[]}</instruction>
+        <slimResult>fail(a=null;e=NYC)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>null</actual>
+                              <expected>NYC</expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_74\bin\java" -cp "C:\Users\Matt Chiogioji\.gradle\caches\modules-2\files-2.1\org.fitnesse\fitnesse\20161106\8068ec3b5054be60d4076ff91a94c8c524f9876c\fitnesse-20161106.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\ant-1.9.6.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\ant-launcher-1.9.6.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\antlr-2.7.7.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\aspectjweaver-1.8.9.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\classmate-1.3.3.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\commons-collections-3.2.2.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\commons-lang-2.6.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\diffutils-1.3.0.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\dom4j-1.6.1.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\fitnesse-20161106.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\groovy-2.4.9.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\groovy-all-2.4.7.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\h2-1.4.193.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hamcrest-core-1.3.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hibernate-commons-annotations-5.0.1.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hibernate-core-5.0.12.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hibernate-entitymanager-5.0.12.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\hibernate-validator-5.3.4.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\htmllexer-2.1.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\htmlparser-2.1.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jackson-annotations-2.8.0.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jackson-core-2.8.7.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jackson-databind-2.8.7.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jandex-2.0.0.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\javassist-3.21.0-GA.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\javax.transaction-api-1.2.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jboss-logging-3.3.0.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jcl-over-slf4j-1.7.24.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\json-20140107.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\jul-to-slf4j-1.7.24.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\junit-4.12.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\log4j-over-slf4j-1.7.24.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\logback-classic-1.1.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\logback-core-1.1.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\ognl-3.0.8.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\slf4j-api-1.7.24.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\snakeyaml-1.17.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-aop-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-aspects-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-beans-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-autoconfigure-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-devtools-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-aop-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-data-jpa-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-jdbc-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-logging-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-thymeleaf-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-tomcat-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-boot-starter-web-1.5.2.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-context-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-core-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-data-commons-1.13.1.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-data-jpa-1.11.1.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-expression-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-jdbc-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-orm-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-tx-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-web-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\spring-webmvc-4.3.7.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\thymeleaf-2.1.5.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\thymeleaf-layout-dialect-1.4.0.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\thymeleaf-spring4-2.1.5.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\tomcat-embed-core-8.5.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\tomcat-embed-el-8.5.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\tomcat-embed-websocket-8.5.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\tomcat-jdbc-8.5.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\tomcat-juli-8.5.11.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\unbescape-1.1.0.RELEASE.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\validation-api-1.1.0.Final.jar;C:\CODE\github\chio-travel\acceptance-test\.\lib\velocity-1.7.jar;./build/classes/main" fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>689</totalRunTimeInMillis>
+</testResults>
+

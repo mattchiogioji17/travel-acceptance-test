@@ -1,0 +1,10 @@
+---
+Test
+---
+!3 Query Flight API
+
+|com.chio.fixtures.QueryFlightApi                                                         |
+|Test Description|origin|destination|date      |returnCode?|resultSize?|resultDestination?|
+|Success         |TPA   |NYC        |2017-06-01|200        |>0         |NYC               |
+
+!contents -R2 -g -p -f -h
